@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seu IMC é: "
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        tools:text="Teste em tools" />
+
+    <TextView
+        android:id="@+id/textview_classificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        tools:text="Classificação: Normal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="VEJA ABAIXO A TABELA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="
+MENOR QUE 18,5 - ABAIXO DO PESO\n
+ENTRE 18,5 E 24,9 - NORMAL\n
+ENTRE 25,0 E 29,9 - SOBREPESO I\n
+ENTRE 30,0 E 39,9 - OBESIDADE II\n
+MAIOR QUE 40,0 - OBESIDADE GRAVE III"/>
+</LinearLayout>
